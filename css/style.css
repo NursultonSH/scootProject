@@ -153,4 +153,47 @@ header menu .mobile-menu ul li a {
 header menu nav ul {
   -moz-column-gap: 32px;
        column-gap: 32px;
+}
+
+@media only screen and (max-width: 670px) {
+  .header {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+  }
+  .header menu {
+    width: 100%;
+    justify-content: space-between;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 22px 0;
+  }
+  .header menu .gam {
+    display: flex;
+    margin-left: 33px;
+  }
+  .header menu .gam .gam1 {
+    display: flex;
+  }
+  .header menu .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .header menu .mobile-menu {
+    display: flex;
+  }
+  .header menu .mobile-menu button {
+    display: block;
+  }
+  .header menu nav {
+    display: none;
+  }
+  .header button {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

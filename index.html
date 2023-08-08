@@ -37,5 +37,22 @@
         </menu>
         <button class="getScootin-btn">Get Scootin</button>
     </header>
+    <script>
+        let gam = document.querySelector('.gam1')
+        let mobMenu = document.querySelector('.mobile-menu')
+        let close = document.querySelector('.x')
+
+        gam.addEventListener('click', () => {
+            mobMenu.style.top = '73px'
+            gam.style.display = 'none'
+            close.style.display = 'block'
+        })
+        close.addEventListener('click', ()=> {
+            mobMenu.style.top = '-100%'
+            close.style.display = 'none'
+            gam.style.display = 'flex'
+        })
+    </script>
+
 </body>
 </html>

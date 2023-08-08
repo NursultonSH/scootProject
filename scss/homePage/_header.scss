@@ -52,3 +52,46 @@ header{
     }
 }
 
+
+
+@media only screen and (max-width:670px) {
+    .header{
+        padding: 0;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        menu{ 
+            width: 100%;
+            justify-content: space-between;
+            column-gap: 0;
+            align-items: center;
+            position: relative;
+            background-color: white;
+            padding: 22px 0;
+            .gam{
+                display: flex;
+                margin-left: 33px;
+                .gam1{
+                    display: flex;
+                }
+            }
+            .logo{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .mobile-menu{
+                display: flex;
+                button{
+                    display: block;
+                }
+            }
+            nav{
+                display: none;
+            }
+        }
+        button{
+            display: none;
+        }
+    }
+}
