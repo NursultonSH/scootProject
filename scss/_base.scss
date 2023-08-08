@@ -23,7 +23,10 @@ ul{
     li{
         font-size: 15px;
         font-weight: 700;
-        color: $grey;
+        a{
+            text-decoration: none;
+            color: $grey;
+        }
     }
 }
 
@@ -34,7 +37,9 @@ ul{
     margin: 0 auto;
 }
 .container{
-    max-width: 1106px;
+    max-width: 1166px;
+    padding-left: 30px;
+    padding-right:30px;
     margin: 0 auto;
 }
 
@@ -50,6 +55,10 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.df-c{
+    display: flex;
+    align-items: center;
 }
 
 

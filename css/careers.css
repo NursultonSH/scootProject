@@ -24,6 +24,9 @@ button {
 ul li {
   font-size: 15px;
   font-weight: 700;
+}
+ul li a {
+  text-decoration: none;
   color: #939CAA;
 }
 
@@ -33,7 +36,9 @@ ul li {
 }
 
 .container {
-  max-width: 1106px;
+  max-width: 1166px;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 0 auto;
 }
 
@@ -47,6 +52,11 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.df-c {
+  display: flex;
+  align-items: center;
 }
 
 .big-txt {

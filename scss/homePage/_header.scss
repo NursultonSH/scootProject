@@ -1,0 +1,54 @@
+header{
+    padding: 22px 0;
+    background-color: white;
+    menu{
+        column-gap:58px;
+        .gam{
+            display: none;
+            .x{
+                display: none;
+            }
+            .gam1{
+                display: none;
+                flex-direction: column;
+                width: 20px;
+                height: 16px;
+                .gam_item{
+                    width: 100%;
+                    height: 3px;
+                    background-color: $yellow;
+                }
+            }
+        }
+        .mobile-menu{
+            width: 256px;
+            height: 520px;
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            position: fixed;
+            top: -100%;
+            z-index: -5;
+            background-color: #333A44;
+            padding: 64px 0 24px 32px;
+            transition: 0.3s;
+            ul{
+                flex-direction: column;
+                align-items: self-start;
+                row-gap: 24px;
+                li{
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+        nav{
+            ul{
+                column-gap: 32px;
+            }
+        }
+    }
+}
+
