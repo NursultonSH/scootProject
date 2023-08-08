@@ -12,7 +12,20 @@ button{
 img{
     display: block;
 }
-
+button{
+    background-color: $yellow;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    border: none;
+}
+ul{
+    li{
+        font-size: 15px;
+        font-weight: 700;
+        color: $grey;
+    }
+}
 
 
 
@@ -68,4 +81,17 @@ img{
     font-size: $small_txt_size;
     line-height: $small_line_height;
     font-weight: 400;
+}
+
+
+
+
+.learnMore-btn{
+    padding:14px 44px;
+}
+.getScootin-btn{
+    padding: 14px 39px;
+}
+.apply-btn{
+    padding: 14px 67px;
 }

@@ -13,6 +13,20 @@ img {
   display: block;
 }
 
+button {
+  background-color: #FCB72B;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  border: none;
+}
+
+ul li {
+  font-size: 15px;
+  font-weight: 700;
+  color: #939CAA;
+}
+
 .big-container {
   max-width: 1560px;
   margin: 0 auto;
@@ -65,4 +79,16 @@ img {
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
+}
+
+.learnMore-btn {
+  padding: 14px 44px;
+}
+
+.getScootin-btn {
+  padding: 14px 39px;
+}
+
+.apply-btn {
+  padding: 14px 67px;
 }/*# sourceMappingURL=about.css.map */
