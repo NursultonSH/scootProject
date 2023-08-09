@@ -59,6 +59,11 @@ ul li a {
   align-items: center;
 }
 
+.df-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;
@@ -110,6 +115,7 @@ header {
 header menu {
   -moz-column-gap: 58px;
        column-gap: 58px;
+  background-color: white;
 }
 header menu .gam {
   display: none;
@@ -160,7 +166,6 @@ header menu nav ul {
     padding: 0;
     width: 100%;
     position: fixed;
-    background-color: white;
   }
   .header menu {
     width: 100%;
@@ -169,7 +174,6 @@ header menu nav ul {
          column-gap: 0;
     align-items: center;
     position: relative;
-    background-color: white;
     padding: 22px 0;
   }
   .header menu .gam {
@@ -196,4 +200,23 @@ header menu nav ul {
   .header button {
     display: none;
   }
+}
+main .first-sec {
+  background: url(../../../img/images/home-hero-desktop.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  padding: 153px 0;
+}
+main .first-sec .sec-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+main .first-sec .sec-item h1 {
+  max-width: 500px;
+  color: white;
+}
+main .first-sec .sec-item p {
+  max-width: 405px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

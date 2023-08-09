@@ -59,6 +59,11 @@ ul li a {
   align-items: center;
 }
 
+.df-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;

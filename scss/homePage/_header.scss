@@ -3,6 +3,7 @@ header{
     background-color: white;
     menu{
         column-gap:58px;
+        background-color: white;
         .gam{
             display: none;
             .x{
@@ -58,15 +59,13 @@ header{
     .header{
         padding: 0;
         width: 100%;
-        position: fixed;
-        background-color: white;
+        position: fixed;    
         menu{ 
             width: 100%;
             justify-content: space-between;
             column-gap: 0;
             align-items: center;
             position: relative;
-            background-color: white;
             padding: 22px 0;
             .gam{
                 display: flex;
