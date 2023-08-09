@@ -284,6 +284,30 @@ main .first-sec .sec-item p {
     background-size: 100% 100%;
   }
 }
+@media only screen and (max-width: 590px) {
+  main .second-sec {
+    justify-content: space-around;
+    padding-top: 120px;
+  }
+  main .second-sec .second-sec-item1 {
+    display: none;
+  }
+  main .second-sec .second-sec-item2 {
+    row-gap: 48px;
+    width: 311px;
+  }
+  main .second-sec .second-sec-item2 .yellow-cicles {
+    display: flex;
+  }
+  main .second-sec .second-sec-item2 p {
+    text-align: center;
+  }
+  main .second-sec .second-sec-item2 h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 24px;
+  }
+}
 main .second-sec {
   display: flex;
   flex-direction: column;
