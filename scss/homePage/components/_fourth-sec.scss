@@ -10,3 +10,21 @@ main{
         }
     }
 }
+
+@media only screen and (max-width:950px) {
+    main{
+        .third-sec{
+            margin-top: 145px;  
+        }
+    }
+}
+@media only screen and (max-width:750px) {
+    main{
+        .fourth-sec{
+            overflow: hidden;
+            .right-arrow{
+                left: -150px;
+            }
+        }
+    }
+}

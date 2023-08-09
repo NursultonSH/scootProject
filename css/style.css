@@ -482,4 +482,18 @@ main .fourth-sec .right-arrow {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media only screen and (max-width: 950px) {
+  main .third-sec {
+    margin-top: 145px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  main .fourth-sec {
+    overflow: hidden;
+  }
+  main .fourth-sec .right-arrow {
+    left: -150px;
+  }
 }/*# sourceMappingURL=style.css.map */
