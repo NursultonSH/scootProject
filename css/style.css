@@ -289,7 +289,6 @@ main .second-sec {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  margin-bottom: 200px;
   padding-top: 160px;
 }
 main .second-sec .yellow-cicles {
@@ -386,8 +385,9 @@ main .second-sec-item2 p {
   }
 }
 main .third-sec {
-  background: url(../../../img/images/half-cicle.png) no-repeat right center;
+  background: url(../../../img/images/half-cicle.png) no-repeat right top;
   position: relative;
+  margin-top: 200px;
 }
 main .third-sec .left-top-arrow {
   position: absolute;
@@ -397,6 +397,9 @@ main .third-sec .left-top-arrow {
 main .third-sec-item {
   flex-wrap: wrap;
 }
+main .third-sec-item .mobile-img {
+  display: none;
+}
 main .third-sec-item .txt-box {
   max-width: 445px;
 }
@@ -405,4 +408,34 @@ main .third-sec-item .txt-box p {
 }
 main .third-sec-item .txt-box button {
   margin-top: 40px;
+}
+
+@media only screen and (max-width: 950px) {
+  main .third-sec {
+    margin-top: 145px;
+  }
+  main .third-sec .left-top-arrow {
+    top: 307px;
+  }
+  main .third-sec-item {
+    justify-content: center;
+  }
+  main .third-sec-item .mobile-img {
+    display: block;
+  }
+  main .third-sec-item .txt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+  }
+  main .third-sec-item .txt-box h2 {
+    text-align: center;
+  }
+  main .third-sec-item .txt-box p {
+    text-align: center;
+  }
+  main .third-sec-item .desktop-img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */

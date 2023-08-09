@@ -1,7 +1,8 @@
 main{
     .third-sec{
-        background: url(../../../img/images/half-cicle.png) no-repeat right center;
+        background: url(../../../img/images/half-cicle.png) no-repeat right top;
         position: relative;
+        margin-top: 200px;
         .left-top-arrow{
             position: absolute;
             bottom: 0;
@@ -9,6 +10,9 @@ main{
         }
         &-item{
             flex-wrap: wrap;
+            .mobile-img{
+                display: none;
+            }
             .txt-box{
                 max-width: 445px;
                 p{
@@ -21,3 +25,36 @@ main{
         }
     }
 }
+
+@media only screen and (max-width:950px) {
+    main{
+        .third-sec{
+            margin-top: 145px;  
+            .left-top-arrow{
+                top: 307px;
+            }
+            &-item{
+                justify-content: center;
+                .mobile-img{
+                    display: block;
+                }
+                .txt-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 56px;
+                    h2{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                .desktop-img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
