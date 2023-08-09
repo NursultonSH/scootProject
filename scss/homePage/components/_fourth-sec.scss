@@ -1,0 +1,12 @@
+main{
+    .fourth-sec{
+        position: relative;
+        margin-top: 160px;
+        background: url(../../../img/images/half-cicle-left.png) no-repeat left top;
+        .right-arrow{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}

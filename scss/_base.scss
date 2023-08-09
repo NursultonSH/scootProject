@@ -19,9 +19,9 @@ button{
     color: white;
     border: none;
     transition: 0.2s;
+    border: 3px solid $yellow;
     &:hover{
         background-color: transparent;
-        border: 1px solid $yellow;
         color: $yellow;
     }
 }
@@ -119,11 +119,11 @@ ul{
 
 
 .learnMore-btn{
-    padding:14px 44px;
+    padding:8px 38px;
 }
 .getScootin-btn{
-    padding: 14px 39px;
+    padding: 8px 33px;
 }
 .apply-btn{
-    padding: 14px 67px
+    padding: 8px 61px
 }
