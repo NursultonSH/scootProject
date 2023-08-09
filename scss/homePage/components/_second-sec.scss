@@ -4,20 +4,21 @@ main{
         flex-direction: column;
         row-gap: 40px;
         margin-bottom: 200px;
+        padding-top: 160px;
+        .yellow-cicles{
+            position: relative;
+            z-index: 1;
+            width: 96px;
+            height: 96px;
+            background-color:$yellow;
+            border-radius: 100%;
+        }
         .second-sec-item1{
             width: max-content;
             position: relative;
             display: flex;
             align-items: center;
             column-gap: 284px;
-            .yellow-cicles{
-                position: relative;
-                z-index: 1;
-                width: 96px;
-                height: 96px;
-                background-color:$yellow;
-                border-radius: 100%;
-            }
             .grey-line{
                 position: absolute;
                 z-index: 0;
@@ -31,9 +32,50 @@ main{
             width: 100%;
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            .yellow-cicles{
+                display:none;
+            }
             p{
                 color: #939CAA;
                 width: 350px;
+                margin-top: 27px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1160px) {
+    main{
+        .second-sec{ 
+            flex-direction: row;
+            justify-content: space-evenly;
+            padding-top: 122px;
+            .second-sec-item1{
+                flex-direction: column;
+                justify-content: space-between;
+                .grey-line{
+                    height: 100%;
+                    width: 15px;
+                }
+            }
+            .second-sec-item2{
+                row-gap: 40px;
+                width: 450px;
+                p{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:700px) {
+    main{
+        .second-sec{
+            justify-content: space-between;
+            .second-sec-item2{
+                width: 400px;
             }
         }
     }

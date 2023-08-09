@@ -74,6 +74,10 @@ ul li a:hover {
   justify-content: space-between;
 }
 
+.fl-dr {
+  flex-direction: column;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;

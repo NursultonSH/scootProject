@@ -74,6 +74,10 @@ ul li a:hover {
   justify-content: space-between;
 }
 
+.fl-dr {
+  flex-direction: column;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;
@@ -182,6 +186,7 @@ header menu nav ul {
     padding: 0;
     width: 100%;
     position: fixed;
+    z-index: 2;
   }
   .header menu {
     width: 100%;
@@ -221,7 +226,6 @@ main .first-sec {
   background: url(../../../img/images/home-hero-desktop.jpg) no-repeat center center;
   background-size: 100% 100%;
   padding: 153px 0;
-  margin-bottom: 160px;
 }
 main .first-sec .sec-item {
   display: flex;
@@ -285,6 +289,15 @@ main .second-sec {
   flex-direction: column;
   row-gap: 40px;
   margin-bottom: 200px;
+  padding-top: 160px;
+}
+main .second-sec .yellow-cicles {
+  position: relative;
+  z-index: 1;
+  width: 96px;
+  height: 96px;
+  background-color: #FCB72B;
+  border-radius: 100%;
 }
 main .second-sec .second-sec-item1 {
   width: -moz-max-content;
@@ -294,14 +307,6 @@ main .second-sec .second-sec-item1 {
   align-items: center;
   -moz-column-gap: 284px;
        column-gap: 284px;
-}
-main .second-sec .second-sec-item1 .yellow-cicles {
-  position: relative;
-  z-index: 1;
-  width: 96px;
-  height: 96px;
-  background-color: #FCB72B;
-  border-radius: 100%;
 }
 main .second-sec .second-sec-item1 .grey-line {
   position: absolute;
@@ -315,8 +320,44 @@ main .second-sec .second-sec-item2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .second-sec .second-sec-item2 .yellow-cicles {
+  display: none;
 }
 main .second-sec .second-sec-item2 p {
   color: #939CAA;
   width: 350px;
+  margin-top: 27px;
+}
+
+@media only screen and (max-width: 1160px) {
+  main .second-sec {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 122px;
+  }
+  main .second-sec .second-sec-item1 {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  main .second-sec .second-sec-item1 .grey-line {
+    height: 100%;
+    width: 15px;
+  }
+  main .second-sec .second-sec-item2 {
+    row-gap: 40px;
+    width: 450px;
+  }
+  main .second-sec .second-sec-item2 p {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  main .second-sec {
+    justify-content: space-between;
+  }
+  main .second-sec .second-sec-item2 {
+    width: 400px;
+  }
 }/*# sourceMappingURL=style.css.map */
