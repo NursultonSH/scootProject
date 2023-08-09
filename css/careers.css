@@ -19,6 +19,12 @@ button {
   font-weight: 700;
   color: white;
   border: none;
+  transition: 0.2s;
+}
+button:hover {
+  background-color: transparent;
+  border: 1px solid #FCB72B;
+  color: #FCB72B;
 }
 
 ul li {
@@ -28,6 +34,10 @@ ul li {
 ul li a {
   text-decoration: none;
   color: #939CAA;
+  transition: 0.3s;
+}
+ul li a:hover {
+  color: #FCB72B;
 }
 
 .big-container {

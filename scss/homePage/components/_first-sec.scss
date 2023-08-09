@@ -40,3 +40,27 @@ main{
         }
     }
 }
+@media only screen and (max-width:670px){
+    main{
+        padding-top: 73px;
+        .first-sec{
+            padding: 115px 0 179px 0;
+            .sec-item{
+                row-gap: 28px;
+                h1{
+                    font-size: 40px;
+                    font-weight: 40px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    main{
+        padding-top: 72px;
+        .first-sec{
+            background: url(../../../img/images/home-hero-mobile.jpg) no-repeat center center;
+            background-size: 100% 100%;
+        }
+    }
+}
