@@ -1,0 +1,40 @@
+main{
+    .second-sec{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        margin-bottom: 200px;
+        .second-sec-item1{
+            width: max-content;
+            position: relative;
+            display: flex;
+            align-items: center;
+            column-gap: 284px;
+            .yellow-cicles{
+                position: relative;
+                z-index: 1;
+                width: 96px;
+                height: 96px;
+                background-color:$yellow;
+                border-radius: 100%;
+            }
+            .grey-line{
+                position: absolute;
+                z-index: 0;
+                width: 100%;
+                height: 15px;
+                background-color: $light-grey;
+                border-radius: 10px;
+            }
+        }
+        .second-sec-item2{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p{
+                color: #939CAA;
+                width: 350px;
+            }
+        }
+    }
+}

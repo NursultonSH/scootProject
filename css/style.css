@@ -94,6 +94,12 @@ ul li a:hover {
   letter-spacing: -1.0714285374px;
 }
 
+.small-medium-txt {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.0714285374px;
+}
+
 .btn-and-ul-txt {
   font-size: 15px;
   font-weight: 700;
@@ -215,6 +221,7 @@ main .first-sec {
   background: url(../../../img/images/home-hero-desktop.jpg) no-repeat center center;
   background-size: 100% 100%;
   padding: 153px 0;
+  margin-bottom: 160px;
 }
 main .first-sec .sec-item {
   display: flex;
@@ -272,4 +279,44 @@ main .first-sec .sec-item p {
     background: url(../../../img/images/home-hero-mobile.jpg) no-repeat center center;
     background-size: 100% 100%;
   }
+}
+main .second-sec {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-bottom: 200px;
+}
+main .second-sec .second-sec-item1 {
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 284px;
+       column-gap: 284px;
+}
+main .second-sec .second-sec-item1 .yellow-cicles {
+  position: relative;
+  z-index: 1;
+  width: 96px;
+  height: 96px;
+  background-color: #FCB72B;
+  border-radius: 100%;
+}
+main .second-sec .second-sec-item1 .grey-line {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #E5ECF4;
+  border-radius: 10px;
+}
+main .second-sec .second-sec-item2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .second-sec .second-sec-item2 p {
+  color: #939CAA;
+  width: 350px;
 }/*# sourceMappingURL=style.css.map */
