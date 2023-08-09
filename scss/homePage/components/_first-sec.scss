@@ -19,3 +19,24 @@ main{
         }
     }
 }
+
+@media only screen and (max-width:768px) {
+    main{
+        .first-sec{
+            background:url(../../../img/images/home-hero-tablet.jpg) no-repeat;
+            background-size: 100% 100%;
+            padding: 137px 0 217px 0;
+            .sec-item{
+                align-items: center;
+                h1{
+                    max-width: 573px;
+                    text-align: center;
+                }
+                p{
+                    max-width: 573px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

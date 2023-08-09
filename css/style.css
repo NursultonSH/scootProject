@@ -219,4 +219,23 @@ main .first-sec .sec-item h1 {
 main .first-sec .sec-item p {
   max-width: 405px;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  main .first-sec {
+    background: url(../../../img/images/home-hero-tablet.jpg) no-repeat;
+    background-size: 100% 100%;
+    padding: 137px 0 217px 0;
+  }
+  main .first-sec .sec-item {
+    align-items: center;
+  }
+  main .first-sec .sec-item h1 {
+    max-width: 573px;
+    text-align: center;
+  }
+  main .first-sec .sec-item p {
+    max-width: 573px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=style.css.map */
