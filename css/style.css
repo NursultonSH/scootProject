@@ -114,6 +114,7 @@ ul li a:hover {
   font-size: 15px;
   line-height: 25px;
   font-weight: 400;
+  color: #939CAA;
 }
 
 .learnMore-btn {
@@ -284,30 +285,6 @@ main .first-sec .sec-item p {
     background-size: 100% 100%;
   }
 }
-@media only screen and (max-width: 590px) {
-  main .second-sec {
-    justify-content: space-around;
-    padding-top: 120px;
-  }
-  main .second-sec .second-sec-item1 {
-    display: none;
-  }
-  main .second-sec .second-sec-item2 {
-    row-gap: 48px;
-    width: 311px;
-  }
-  main .second-sec .second-sec-item2 .yellow-cicles {
-    display: flex;
-  }
-  main .second-sec .second-sec-item2 p {
-    text-align: center;
-  }
-  main .second-sec .second-sec-item2 h3 {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 24px;
-  }
-}
 main .second-sec {
   display: flex;
   flex-direction: column;
@@ -323,7 +300,7 @@ main .second-sec .yellow-cicles {
   background-color: #FCB72B;
   border-radius: 100%;
 }
-main .second-sec .second-sec-item1 {
+main .second-sec-item1 {
   width: -moz-max-content;
   width: max-content;
   position: relative;
@@ -332,7 +309,7 @@ main .second-sec .second-sec-item1 {
   -moz-column-gap: 284px;
        column-gap: 284px;
 }
-main .second-sec .second-sec-item1 .grey-line {
+main .second-sec-item1 .grey-line {
   position: absolute;
   z-index: 0;
   width: 100%;
@@ -340,17 +317,16 @@ main .second-sec .second-sec-item1 .grey-line {
   background-color: #E5ECF4;
   border-radius: 10px;
 }
-main .second-sec .second-sec-item2 {
+main .second-sec-item2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-main .second-sec .second-sec-item2 .yellow-cicles {
+main .second-sec-item2 .yellow-cicles {
   display: none;
 }
-main .second-sec .second-sec-item2 p {
-  color: #939CAA;
+main .second-sec-item2 p {
   width: 350px;
   margin-top: 27px;
 }
@@ -361,19 +337,19 @@ main .second-sec .second-sec-item2 p {
     justify-content: space-evenly;
     padding-top: 122px;
   }
-  main .second-sec .second-sec-item1 {
+  main .second-sec-item1 {
     flex-direction: column;
     justify-content: space-between;
   }
-  main .second-sec .second-sec-item1 .grey-line {
+  main .second-sec-item1 .grey-line {
     height: 100%;
     width: 15px;
   }
-  main .second-sec .second-sec-item2 {
+  main .second-sec-item2 {
     row-gap: 40px;
     width: 450px;
   }
-  main .second-sec .second-sec-item2 p {
+  main .second-sec-item2 p {
     width: 100%;
   }
 }
@@ -381,7 +357,52 @@ main .second-sec .second-sec-item2 p {
   main .second-sec {
     justify-content: space-between;
   }
-  main .second-sec .second-sec-item2 {
+  main .second-sec-item2 {
     width: 400px;
   }
+}
+@media only screen and (max-width: 590px) {
+  main .second-sec {
+    justify-content: space-around;
+    padding-top: 120px;
+  }
+  main .second-sec-item1 {
+    display: none;
+  }
+  main .second-sec-item2 {
+    row-gap: 48px;
+    width: 311px;
+  }
+  main .second-sec-item2 .yellow-cicles {
+    display: flex;
+  }
+  main .second-sec-item2 p {
+    text-align: center;
+  }
+  main .second-sec-item2 h3 {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 24px;
+  }
+}
+main .third-sec {
+  background: url(../../../img/images/half-cicle.png) no-repeat right center;
+  position: relative;
+}
+main .third-sec .left-top-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main .third-sec-item {
+  flex-wrap: wrap;
+}
+main .third-sec-item .txt-box {
+  max-width: 445px;
+}
+main .third-sec-item .txt-box p {
+  margin-top: 24px;
+}
+main .third-sec-item .txt-box button {
+  margin-top: 40px;
 }/*# sourceMappingURL=style.css.map */

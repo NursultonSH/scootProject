@@ -1,0 +1,23 @@
+main{
+    .third-sec{
+        background: url(../../../img/images/half-cicle.png) no-repeat right center;
+        position: relative;
+        .left-top-arrow{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        &-item{
+            flex-wrap: wrap;
+            .txt-box{
+                max-width: 445px;
+                p{
+                    margin-top: 24px;
+                }
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
