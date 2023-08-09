@@ -7,3 +7,12 @@
         right: -344px;
     }
 }
+@media only screen and (max-width:750px) {
+    main{
+        .third-sec{
+            .left-arrow{
+                right: -480px;
+            }
+        }
+    }
+}

@@ -83,23 +83,23 @@ ul{
 
 .big-txt{
     font-weight: 700;
-    font-size:$big-txt-size;
-    line-height:$big-line-height;
+    font-size:56px;
+    line-height:56px;
     letter-spacing: -2.5px;
 }
 .title-txt{
     font-weight: 700;
-    font-size: $title_txt_size;
-    line-height: $title_line_height;
+    font-size: 48px;
+    line-height: 48px;
     letter-spacing: -2.142857074737549px;
 }
 .medium-txt{
-    font-size:$medium_txt_size;
+    font-size:40px;
     font-weight: 700;
     letter-spacing: -1.0714285373687744px;
 }
 .small-medium-txt{
-    font-size: $smallmedium_txt_size;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: -1.0714285373687744px;
 }
@@ -109,8 +109,8 @@ ul{
 }
 .small-txt{
     font-family: Lexend Deca;
-    font-size: $small_txt_size;
-    line-height: $small_line_height;
+    font-size: 15px;
+    line-height: 25px;
     font-weight: 400;
     color: $grey;
 }

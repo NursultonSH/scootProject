@@ -606,4 +606,10 @@ main .third-sec-item .txt-box button {
   position: absolute;
   top: 85px;
   right: -344px;
+}
+
+@media only screen and (max-width: 750px) {
+  main .third-sec .left-arrow {
+    right: -480px;
+  }
 }/*# sourceMappingURL=style.css.map */
