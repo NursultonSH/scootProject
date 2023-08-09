@@ -1,0 +1,9 @@
+@import './third-sec';
+.third-sec{
+    overflow: hidden;
+    .left-arrow{
+        position: absolute;
+        top: 85px;
+        right: -344px;
+    }
+}
