@@ -438,4 +438,38 @@ main .third-sec-item .txt-box button {
   main .third-sec-item .desktop-img {
     display: none;
   }
+}
+@media only screen and (max-width: 750px) {
+  main .third-sec {
+    overflow: hidden;
+  }
+  main .third-sec .left-top-arrow {
+    right: -432px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main .third-sec {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .third-sec {
+    margin-top: 120px;
+  }
+  main .third-sec .left-top-arrow {
+    top: 173px;
+  }
+  main .third-sec-item .mobile-img {
+    width: 311px;
+  }
+  main .third-sec-item .txt-box {
+    max-width: 311px;
+  }
+  main .third-sec-item .txt-box h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main .third-sec-item .txt-box p {
+    margin-top: 32px;
+  }
 }/*# sourceMappingURL=style.css.map */
