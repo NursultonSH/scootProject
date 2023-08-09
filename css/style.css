@@ -496,4 +496,17 @@ main .fourth-sec .right-arrow {
   main .fourth-sec .right-arrow {
     left: -150px;
   }
+}
+@media only screen and (max-width: 650px) {
+  main .fourth-sec {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .fourth-sec {
+    margin-top: 120px;
+  }
+  main .fourth-sec .third-sec-item .img {
+    width: 311px;
+  }
 }/*# sourceMappingURL=style.css.map */
