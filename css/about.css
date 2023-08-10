@@ -222,4 +222,44 @@ header menu nav ul {
   .header button {
     display: none;
   }
+}
+main .first-sec {
+  position: relative;
+  background: url(../../../img/images/about-hero-desktop.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+main .first-sec .three-circles {
+  position: absolute;
+  right: -31px;
+  top: calc(50% - 31px);
+}
+main .first-sec-item {
+  height: 200px;
+  color: white;
+}
+
+@media only screen and (max-width: 670px) {
+  main {
+    padding-top: 72px;
+  }
+  main .first-sec {
+    padding-left: 30px;
+  }
+  main .first-sec .three-circles {
+    display: none;
+  }
+  main .first-sec-item {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-tablet.jpg);
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-mobile.jpg);
+  }
 }/*# sourceMappingURL=about.css.map */
