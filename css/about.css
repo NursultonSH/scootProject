@@ -14,17 +14,17 @@ img {
 }
 
 button {
-  background-color: #FCB72B;
+  background-color: #fcb72b;
   font-size: 15px;
   font-weight: 700;
   color: white;
   border: none;
   transition: 0.2s;
-  border: 3px solid #FCB72B;
+  border: 3px solid #fcb72b;
 }
 button:hover {
   background-color: transparent;
-  color: #FCB72B;
+  color: #fcb72b;
 }
 
 ul li {
@@ -37,7 +37,7 @@ ul li a {
   transition: 0.3s;
 }
 ul li a:hover {
-  color: #FCB72B;
+  color: #fcb72b;
 }
 
 .big-container {
@@ -118,13 +118,13 @@ ul li a:hover {
 }
 
 .learnMore-btn {
-  padding: 8px 38px;
+  padding: 11px 41px;
 }
 
 .getScootin-btn {
-  padding: 8px 33px;
+  padding: 11px 36px;
 }
 
 .apply-btn {
-  padding: 8px 61px;
+  padding: 11px 64px;
 }/*# sourceMappingURL=about.css.map */
