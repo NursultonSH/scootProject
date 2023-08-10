@@ -8,6 +8,91 @@
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
+    <header class="container header df-c-sb">
+        <menu class="df-c">
+            <div class="gam ">
+                <div class="gam1 df-c-sb">
+                    <div class="gam_item"></div>
+                    <div class="gam_item"></div>
+                    <div class="gam_item"></div>
+                </div>
+                <img class="x" src="./img/icons/close.svg" alt="">
+            </div>
+            <div class="mobile-menu">
+                <ul class="df-c">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+                <button class="getScootin-btn">Get Scootin</button>
+            </div>
+            <div class="logo"><a href="./index.html"><img src="./img/logo.svg" alt=""></a></div>
+            <nav>
+                <ul class="df-c">
+                    <li><a href="#">About</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </nav>
+        </menu>
+        <button class="getScootin-btn">Get Scootin</button>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+    <script src="https://kit.fontawesome.com/1f89176e9f.js" crossorigin="anonymous"></script>
+    <script>
+        let gam = document.querySelector('.gam1')
+        let mobMenu = document.querySelector('.mobile-menu')
+        let close = document.querySelector('.x')
+
+        gam.addEventListener('click', () => {
+            mobMenu.style.top = '73px'
+            gam.style.display = 'none'
+            close.style.display = 'block'
+        })
+        close.addEventListener('click', ()=> {
+            mobMenu.style.top = '-100%'
+            close.style.display = 'none'
+            gam.style.display = 'flex'
+        })
+    </script>
+
 </body>
 </html>
