@@ -26,3 +26,24 @@ main{
     }
 }
 
+@media only screen and (max-width:670px){
+    main{
+        padding-top: 72px;
+        .first-sec{
+            padding-left:30px;
+            .three-circles{
+                display: none;
+            }
+            &-item{
+                justify-content: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width:450px){
+    main{
+        .first-sec{
+            background-image: url(../../../img/images/about-hero-mobile.jpg);
+        }
+    }
+}
