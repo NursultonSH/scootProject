@@ -619,7 +619,7 @@ footer {
 footer .footer-item1 {
   background: url(../../img/images/footer-bgimg.png) no-repeat bottom right;
   background-color: #495567;
-  padding: 102px;
+  padding: 102px 0;
 }
 footer .footer-item1 .footer-item-top {
   flex-wrap: wrap;
@@ -632,38 +632,11 @@ footer .footer-item1 .footer-item-top .footer-btns {
   -moz-column-gap: 18px;
        column-gap: 18px;
 }
-footer .footer-item1 .footer-item-top .footer-btns .btns {
-  display: flex;
-  -moz-column-gap: 12px;
-       column-gap: 12px;
-  padding: 8px 16px 9px 16px;
-  background-color: #E5ECF4;
-  border-radius: 4px;
-  cursor: pointer;
-}
-footer .footer-item1 .footer-item-top .footer-btns .btns .top-txt {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: -0.4464285672px;
-  color: #495567;
-}
-footer .footer-item1 .footer-item-top .footer-btns .btns .bottom-txt {
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: -0.8928571343px;
-  color: #495567;
-}
 footer .footer-item2 {
   background-color: #333A44;
   padding: 33px 0;
 }
-footer .footer-item2 .footer-item-bottom {
-  display: flex;
-  justify-content: space-between;
-}
 footer .footer-item2 .footer-item-bottom .left-item {
-  display: flex;
-  align-items: center;
   -moz-column-gap: 58px;
        column-gap: 58px;
 }
@@ -673,12 +646,29 @@ footer .footer-item2 .footer-item-bottom .left-item ul {
        column-gap: 32px;
 }
 footer .footer-item2 .footer-item-bottom .right-item {
-  display: flex;
-  align-items: center;
   -moz-column-gap: 24px;
        column-gap: 24px;
   font-size: 24px;
 }
-footer .footer-item2 .footer-item-bottom .right-item .icon:hover {
-  color: white;
+
+@media only screen and (max-width: 834px) {
+  footer {
+    padding-top: 104px;
+  }
+  footer .footer-item1 .footer-item-top {
+    justify-content: center;
+    row-gap: 40px;
+  }
+  footer .footer-item1 .footer-item-top h2 {
+    width: 457px;
+    text-align: center;
+  }
+  footer .footer-item1 .footer-item-top .footer-btns {
+    -moz-column-gap: 18px;
+         column-gap: 18px;
+  }
+  footer .footer-item1 .footer-item-top .footer-btns img {
+    width: 113px;
+    height: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ footer{
     .footer-item1{
         background: url(../../img/images/footer-bgimg.png) no-repeat bottom right   ;
         background-color: #495567;
-        padding: 102px;
+        padding: 102px 0;
         .footer-item-top{
             flex-wrap: wrap;
             h2{
@@ -12,26 +12,6 @@ footer{
             }
             .footer-btns{
                 column-gap: 18px;
-                .btns{
-                    display: flex;
-                    column-gap: 12px;
-                    padding: 8px 16px 9px 16px;
-                    background-color: $light_grey;
-                    border-radius: 4px;
-                    cursor: pointer;
-                    .top-txt{
-                        font-size: 10px;
-                        font-weight: 700;
-                        letter-spacing: -0.4464285671710968px;
-                        color: $dark_grey;
-                    }
-                    .bottom-txt{
-                        font-size: 20px;
-                        font-weight: 700;
-                        letter-spacing: -0.8928571343421936px;
-                        color:$dark_grey ;
-                    }
-                }
             }
         }
     }
@@ -39,11 +19,7 @@ footer{
         background-color: #333A44;
         padding: 33px 0;
         .footer-item-bottom{
-            display: flex;
-            justify-content: space-between;
             .left-item{
-                display: flex;
-                align-items: center ;
                 column-gap: 58px;
                 ul{
                     display: flex;
@@ -51,12 +27,30 @@ footer{
                 }
             }
             .right-item{
-                display: flex;
-                align-items: center;
                 column-gap: 24px;
                 font-size: 24px;
-                .icon:hover{
-                    color: white;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:834px) {
+    footer{
+        padding-top: 104px;
+        .footer-item1{
+            .footer-item-top{
+                justify-content: center;
+                row-gap: 40px;
+                h2{
+                    width: 457px;
+                    text-align: center;
+                }
+                .footer-btns{
+                    column-gap: 18px;
+                    img{
+                        width: 113px ;
+                        height: 40px;
+                    }
                 }
             }
         }
