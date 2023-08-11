@@ -239,6 +239,11 @@ main .first-sec-item {
   color: white;
 }
 
+@media only screen and (max-width: 768px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-tablet.jpg);
+  }
+}
 @media only screen and (max-width: 670px) {
   main {
     padding-top: 72px;
@@ -253,13 +258,150 @@ main .first-sec-item {
     justify-content: center;
   }
 }
-@media only screen and (max-width: 768px) {
-  main .first-sec {
-    background-image: url(../../../img/images/about-hero-tablet.jpg);
-  }
-}
 @media only screen and (max-width: 450px) {
   main .first-sec {
     background-image: url(../../../img/images/about-hero-mobile.jpg);
+  }
+}
+main .third-sec {
+  background: url(../../../img/images/half-cicle.png) no-repeat right top;
+  position: relative;
+  margin-top: 200px;
+}
+main .third-sec .left-top-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main .third-sec-item {
+  flex-wrap: wrap;
+}
+main .third-sec-item .mobile-img {
+  display: none;
+}
+main .third-sec-item .txt-box {
+  max-width: 445px;
+}
+main .third-sec-item .txt-box p {
+  margin-top: 24px;
+}
+main .third-sec-item .txt-box button {
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 950px) {
+  main .third-sec {
+    margin-top: 145px;
+  }
+  main .third-sec .left-top-arrow {
+    top: 307px;
+  }
+  main .third-sec-item {
+    justify-content: center;
+  }
+  main .third-sec-item .mobile-img {
+    display: block;
+  }
+  main .third-sec-item .txt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+  }
+  main .third-sec-item .txt-box h2 {
+    text-align: center;
+  }
+  main .third-sec-item .txt-box p {
+    text-align: center;
+  }
+  main .third-sec-item .desktop-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  main .third-sec {
+    overflow: hidden;
+  }
+  main .third-sec .left-top-arrow {
+    right: -432px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main .third-sec {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .third-sec {
+    margin-top: 120px;
+  }
+  main .third-sec .left-top-arrow {
+    top: 173px;
+  }
+  main .third-sec-item .mobile-img {
+    width: 311px;
+  }
+  main .third-sec-item .txt-box {
+    max-width: 311px;
+  }
+  main .third-sec-item .txt-box h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main .third-sec-item .txt-box p {
+    margin-top: 32px;
+  }
+}
+.about-top-arrow {
+  position: absolute;
+  right: 0;
+  top: 268px;
+}
+
+@media only screen and (max-width: 750px) {
+  .about-top-arrow {
+    right: -432px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .about-top-arrow {
+    top: 133px;
+  }
+}
+main .fourth-sec {
+  position: relative;
+  margin-top: 160px;
+  background: url(../../../img/images/half-cicle-left.png) no-repeat left top;
+}
+main .fourth-sec .right-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media only screen and (max-width: 950px) {
+  main .third-sec {
+    margin-top: 145px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  main .fourth-sec {
+    overflow: hidden;
+  }
+  main .fourth-sec .right-arrow {
+    left: -150px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main .fourth-sec {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .fourth-sec {
+    margin-top: 120px;
+  }
+  main .fourth-sec .third-sec-item .img {
+    width: 311px;
   }
 }/*# sourceMappingURL=about.css.map */
