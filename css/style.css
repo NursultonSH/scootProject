@@ -157,13 +157,13 @@ header menu .gam .gam1 .gam_item {
 }
 header menu .mobile-menu {
   width: 256px;
-  height: 520px;
+  height: calc(100vh - 72px);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  position: fixed;
-  top: -100%;
+  position: absolute;
+  top: -800%;
   z-index: -5;
   background-color: #333A44;
   padding: 64px 0 24px 32px;
@@ -199,6 +199,7 @@ header menu nav ul {
     padding: 22px 0;
   }
   .header menu .gam {
+    position: absolute;
     display: flex;
     margin-left: 33px;
   }
@@ -614,7 +615,7 @@ main .third-sec-item .txt-box button {
   }
 }
 footer {
-  padding-top: 200px;
+  padding-top: 150px;
 }
 footer .footer-item1 {
   background: url(../../img/images/footer-bgimg.png) no-repeat bottom right;
