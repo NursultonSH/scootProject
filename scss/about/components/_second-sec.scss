@@ -1,0 +1,103 @@
+main{
+    .second-sec{
+        background: url(../../../img/images/half-cicle.png) no-repeat right top;
+        position: relative;
+        margin-top: 120px;
+        .about-top-arrow{
+            position: absolute;
+            top: 268px;
+            right: 0;
+        }
+        &-item{
+            flex-wrap: wrap;
+            .mobile-img{
+                display: none;
+            }
+            .txt-box{
+                max-width: 445px;
+                p{
+                    margin-top: 24px;
+                }
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:950px) {
+    main{
+        .second-sec{
+            margin-top: 144px;  
+            .about-top-arrow{
+                top: 268px;
+            }
+            &-item{
+                justify-content: center;
+                .mobile-img{
+                    display: block;
+                }
+                .txt-box{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 56px;
+                    h2{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: center;
+                    }
+                }
+                .desktop-img{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:750px) {
+    main{
+        .second-sec{
+            overflow: hidden;
+            .about-top-arrow{
+                right: -432px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:650px){
+    main{
+        .second-sec{
+            background-image: none;
+        }
+    }
+}
+@media only screen and (max-width:550px){
+    main{
+        .second-sec{
+            margin-top: 72px;
+            .about-top-arrow{
+                top: 173px;
+            }
+            &-item{
+                .mobile-img{
+                    width: 311px;
+                }
+                .txt-box{
+                    max-width: 311px;
+                    h2{
+                        font-size: 32px;
+                        line-height: 32px;
+                    }
+                    p{
+                        margin-top: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
