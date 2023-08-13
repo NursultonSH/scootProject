@@ -8,6 +8,98 @@
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-    
+    <header class="container header df-c-sb">
+        <menu class="df-c">
+            <div class="gam ">
+                <div class="gam1 df-c-sb">
+                    <div class="gam_item"></div>
+                    <div class="gam_item"></div>
+                    <div class="gam_item"></div>
+                </div>
+                <img class="x" src="./img/icons/close.svg" alt="">
+            </div>
+            <div class="mobile-menu">
+                <ul class="df-c">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="./careers.html">Careers</a></li>
+                </ul>
+                <button class="getScootin-btn">Get Scootin</button>
+            </div>
+            <a class="logo" href="./index.html"><div ><img src="./img/logo.svg" alt=""></div></a>
+            <nav>
+                <ul class="df-c">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="./careers.html">Careers</a></li>
+                </ul>
+            </nav>
+        </menu>
+        <button class="getScootin-btn">Get Scootin</button>
+    </header>
+    <main>
+        <section class="big-container first-sec">
+            <img class="three-circles" src="./img/patterns/white-circles.svg" alt="">
+            <div class="container first-sec-item df-c">
+                <h1 class="big-txt">Careers</h1>
+            </div>
+        </section>
+        <section class="big-container second-sec">
+            <img class="about-top-arrow" src="./img/patterns/left-downward-arrow.svg" alt="">
+            <div class="container second-sec-item df-c-sb">
+                <img style="border-radius: 100%;" class="mobile-img" src="./img/images/join-us.jpg" alt="">
+                <div class="txt-box">
+                    <h2 class="title-txt">Care to join our mission?</h2>
+                    <p class="small-txt">We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!</p>
+                    <button class="learnMore-btn">Learn More</button>
+                </div>
+                <img style="border-radius: 100%;" class="desktop-img" src="./img/images/join-us.jpg" alt="">
+            </div>
+        </section>
+        <section class="container fourth-sec third-sec df-fc-c">
+            <h2 class="title-txt">Our values</h2>
+            <div class="fourth-sec-item">
+                <div class="values df-fc-c">
+                    <div class="value-img"><img src="./img/images/our tech.png" alt=""> <div class="orders df-c-c small-medium-txt">01</div></div>
+                    <div class="value-txt df-fc-c">
+                        <h3 class="small-medium-txt">Our tech</h3>
+                        <p class="small-txt">We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
+                    </div>
+                </div>
+                <div class="values df-fc-c">
+                    <div class="value-img "><img src="./img/images/our-integrity.png" alt=""> <div class="orders df-c-c small-medium-txt">02</div></div>
+                    <div class="value-txt df-fc-c">
+                        <h3 class="small-medium-txt">Our integrity</h3>
+                        <p class="small-txt">We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
+                    </div>
+                </div>
+                <div class="values df-fc-c">
+                    <div class="value-img"><img src="./img/images/our-comunity.png" alt=""><div class="orders df-c-c  small-medium-txt">03</div></div>
+                    <div class="value-txt df-fc-c">
+                        <h3 class="small-medium-txt">Our community</h3>
+                        <p class="small-txt">We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let gam = document.querySelector('.gam1')
+        let mobMenu = document.querySelector('.mobile-menu')
+        let close = document.querySelector('.x')
+
+        gam.addEventListener('click', () => {
+            mobMenu.style.top = '73px'
+            gam.style.display = 'none'
+            close.style.display = 'block'
+        })
+        close.addEventListener('click', ()=> {
+            mobMenu.style.top = '-800%'
+            close.style.display = 'none'
+            gam.style.display = 'flex'
+        })
+    </script>
+
 </body>
 </html>

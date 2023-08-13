@@ -1,18 +1,33 @@
 @import './third-sec';
 .third-sec{
     overflow: hidden;
+    margin-bottom: 200px;
     .left-arrow{
         position: absolute;
         top: 85px;
         right: -344px;
     }
 }
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:750px){
     main{
         .third-sec{
             .left-arrow{
                 right: -480px;
             }
+        }
+    }
+}
+@media only screen and (max-width:834px){
+    main{
+        .third-sec{
+            margin-bottom: 104px;
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    main{
+        .third-sec{
+            margin-bottom: 120px;
         }
     }
 }

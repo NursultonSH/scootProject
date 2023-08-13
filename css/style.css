@@ -78,6 +78,12 @@ ul li a:hover {
   flex-direction: column;
 }
 
+.df-fc-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;
@@ -90,18 +96,21 @@ ul li a:hover {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.1428570747px;
+  color: #495567;
 }
 
 .medium-txt {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 .small-medium-txt {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 .btn-and-ul-txt {
@@ -602,6 +611,7 @@ main .third-sec-item .txt-box button {
 }
 .third-sec {
   overflow: hidden;
+  margin-bottom: 200px;
 }
 .third-sec .left-arrow {
   position: absolute;
@@ -614,8 +624,15 @@ main .third-sec-item .txt-box button {
     right: -480px;
   }
 }
-footer {
-  padding-top: 150px;
+@media only screen and (max-width: 834px) {
+  main .third-sec {
+    margin-bottom: 104px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  main .third-sec {
+    margin-bottom: 120px;
+  }
 }
 footer .footer-item1 {
   background: url(../../img/images/footer-bgimg.png) no-repeat bottom right;
@@ -653,9 +670,6 @@ footer .footer-item2 .footer-item-bottom .right-item {
 }
 
 @media only screen and (max-width: 834px) {
-  footer {
-    padding-top: 104px;
-  }
   footer .footer-item1 .footer-item-top {
     justify-content: center;
     row-gap: 40px;
@@ -693,9 +707,6 @@ footer .footer-item2 .footer-item-bottom .right-item {
   }
 }
 @media only screen and (max-width: 500px) {
-  footer {
-    padding-top: 120px;
-  }
   footer .footer-item1 .footer-item-top h2 {
     width: 311px;
     font-size: 32px;

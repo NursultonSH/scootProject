@@ -77,7 +77,11 @@ ul{
 .fl-dr{
     flex-direction: column;
 }
-
+.df-fc-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 
@@ -92,16 +96,19 @@ ul{
     font-size: 48px;
     line-height: 48px;
     letter-spacing: -2.142857074737549px;
+    color: $dark_grey;
 }
 .medium-txt{
     font-size:40px;
     font-weight: 700;
     letter-spacing: -1.0714285373687744px;
+    color: $dark_grey;
 }
 .small-medium-txt{
     font-size: 24px;
     font-weight: 700;
     letter-spacing: -1.0714285373687744px;
+    color: $dark_grey;
 }
 .btn-and-ul-txt{
     font-size: 15px;

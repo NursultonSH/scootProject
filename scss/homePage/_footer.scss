@@ -1,5 +1,4 @@
 footer{
-    padding-top: 150px;
     .footer-item1{
         background: url(../../img/images/footer-bgimg.png) no-repeat bottom right   ;
         background-color: #495567;
@@ -36,7 +35,6 @@ footer{
 
 @media only screen and (max-width:834px) {
     footer{
-        padding-top: 104px;
         .footer-item1{
             .footer-item-top{
                 justify-content: center;
@@ -80,7 +78,6 @@ footer{
 }
 @media only screen and (max-width:500px){
     footer{
-        padding-top: 120px;
         .footer-item1{
             .footer-item-top{
                 h2{

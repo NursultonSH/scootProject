@@ -1,0 +1,95 @@
+main{
+    .fifth-sec{
+        row-gap: 64px;
+        margin-top: 120px;
+        margin-bottom: 160px;
+        &-item{
+            width: 100%;
+            .faq-txt-box{
+                row-gap: 16px;
+                .faq-txt-box-item{
+                    row-gap: 24px;
+                    width: 100%;
+                    padding: 32px 40px;
+                    background-color: $snow;
+                    transition: all 0.3s;
+                    &:hover{
+                        background-color: $light_yellow;
+                    }
+                    .chevron-box{
+                        width: 100%;
+                        img{
+                            cursor: pointer;
+                        }
+                        h4{
+                            margin-right: 5px;
+                        }
+                    }
+                    p{
+                        max-width: 650px;
+                        color: $dark_grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1080px){
+    main{
+        .fifth-sec{
+            &-item{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 32px;
+                .faq-txt-box{
+                    row-gap: 24px;
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:768px){
+    main{
+        .fifth-sec{
+            margin-bottom: 120px;
+            &-item{
+                .faq-txt-box{
+                    .faq-txt-box-item{
+                        p{
+                            max-width: 617px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media only screen and (max-width:650px){
+    main{
+        .fifth-sec{
+            margin-top: 145px;
+            row-gap: 48px;
+            &-item{
+                .faq-txt-box{
+                    row-gap: 16px;
+                    .faq-txt-box-item{
+                        padding: 32px 28px 32px 32px;
+                        align-items: center;
+                        .chevron-box{
+                            h4{
+                                font-size: 18px;
+                            }
+                        }
+                        p{
+                            max-width: 251px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

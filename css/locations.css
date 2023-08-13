@@ -78,6 +78,12 @@ ul li a:hover {
   flex-direction: column;
 }
 
+.df-fc-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;
@@ -90,18 +96,21 @@ ul li a:hover {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.1428570747px;
+  color: #495567;
 }
 
 .medium-txt {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 .small-medium-txt {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 .btn-and-ul-txt {

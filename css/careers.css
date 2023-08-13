@@ -78,6 +78,12 @@ ul li a:hover {
   flex-direction: column;
 }
 
+.df-fc-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;
@@ -90,18 +96,21 @@ ul li a:hover {
   font-size: 48px;
   line-height: 48px;
   letter-spacing: -2.1428570747px;
+  color: #495567;
 }
 
 .medium-txt {
   font-size: 40px;
   font-weight: 700;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 .small-medium-txt {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: -1.0714285374px;
+  color: #495567;
 }
 
 .btn-and-ul-txt {
@@ -127,4 +136,285 @@ ul li a:hover {
 
 .apply-btn {
   padding: 11px 64px;
+}
+
+header {
+  padding: 22px 0;
+  background-color: white;
+}
+header menu {
+  -moz-column-gap: 58px;
+       column-gap: 58px;
+  background-color: white;
+}
+header menu .gam {
+  display: none;
+}
+header menu .gam .x {
+  display: none;
+}
+header menu .gam .gam1 {
+  display: none;
+  flex-direction: column;
+  width: 20px;
+  height: 16px;
+}
+header menu .gam .gam1 .gam_item {
+  width: 100%;
+  height: 3px;
+  background-color: #fcb72b;
+}
+header menu .mobile-menu {
+  width: 256px;
+  height: calc(100vh - 72px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  top: -800%;
+  z-index: -5;
+  background-color: #333A44;
+  padding: 64px 0 24px 32px;
+  transition: 0.3s;
+}
+header menu .mobile-menu ul {
+  flex-direction: column;
+  align-items: self-start;
+  row-gap: 24px;
+}
+header menu .mobile-menu ul li a {
+  color: white;
+}
+header menu nav ul {
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+@media only screen and (max-width: 670px) {
+  .header {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+  }
+  .header menu {
+    width: 100%;
+    justify-content: space-between;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    align-items: center;
+    position: relative;
+    padding: 22px 0;
+  }
+  .header menu .gam {
+    position: absolute;
+    display: flex;
+    margin-left: 33px;
+  }
+  .header menu .gam .gam1 {
+    display: flex;
+  }
+  .header menu .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .header menu .mobile-menu {
+    display: flex;
+  }
+  .header menu .mobile-menu button {
+    display: block;
+  }
+  .header menu nav {
+    display: none;
+  }
+  .header button {
+    display: none;
+  }
+}
+main .first-sec {
+  position: relative;
+  background: url(../../../img/images/about-hero-desktop.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+main .first-sec .three-circles {
+  position: absolute;
+  right: -31px;
+  top: calc(50% - 31px);
+}
+main .first-sec-item {
+  height: 200px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-tablet.jpg);
+  }
+}
+@media only screen and (max-width: 670px) {
+  main {
+    padding-top: 72px;
+  }
+  main .first-sec {
+    padding-left: 30px;
+  }
+  main .first-sec .three-circles {
+    display: none;
+  }
+  main .first-sec-item {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-mobile.jpg);
+  }
+}
+main .second-sec {
+  background: url(../../../img/images/half-cicle.png) no-repeat right top;
+  position: relative;
+  margin-top: 120px;
+}
+main .second-sec .about-top-arrow {
+  position: absolute;
+  top: 268px;
+  right: 0;
+}
+main .second-sec-item {
+  flex-wrap: wrap;
+}
+main .second-sec-item .mobile-img {
+  display: none;
+}
+main .second-sec-item .txt-box {
+  max-width: 445px;
+}
+main .second-sec-item .txt-box p {
+  margin-top: 24px;
+}
+
+@media only screen and (max-width: 950px) {
+  main .second-sec {
+    margin-top: 144px;
+  }
+  main .second-sec .about-top-arrow {
+    top: 268px;
+  }
+  main .second-sec-item {
+    justify-content: center;
+  }
+  main .second-sec-item .mobile-img {
+    display: block;
+  }
+  main .second-sec-item .txt-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 56px;
+  }
+  main .second-sec-item .txt-box h2 {
+    text-align: center;
+  }
+  main .second-sec-item .txt-box p {
+    text-align: center;
+  }
+  main .second-sec-item .desktop-img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 750px) {
+  main .second-sec {
+    overflow: hidden;
+  }
+  main .second-sec .about-top-arrow {
+    right: -432px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  main .second-sec {
+    background-image: none;
+  }
+}
+@media only screen and (max-width: 550px) {
+  main .second-sec {
+    margin-top: 72px;
+  }
+  main .second-sec .about-top-arrow {
+    top: 173px;
+  }
+  main .second-sec-item .mobile-img {
+    width: 311px;
+  }
+  main .second-sec-item .txt-box {
+    max-width: 311px;
+  }
+  main .second-sec-item .txt-box h2 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  main .second-sec-item .txt-box p {
+    margin-top: 32px;
+  }
+}
+main .second-sec-item .txt-box button {
+  margin-top: 40px;
+}
+
+main .fourth-sec {
+  row-gap: 103px;
+  margin-top: 120px;
+}
+main .fourth-sec-item {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+main .fourth-sec-item .values {
+  row-gap: 87px;
+}
+main .fourth-sec-item .values .value-img {
+  position: relative;
+}
+main .fourth-sec-item .values .value-img .orders {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 96px;
+  height: 96px;
+  background-color: #fcb72b;
+  border-radius: 100%;
+  color: #495567;
+}
+main .fourth-sec-item .values .value-txt {
+  row-gap: 27px;
+  color: #495567;
+}
+main .fourth-sec-item .values .value-txt p {
+  max-width: 350px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 950px) {
+  main .fourth-sec {
+    row-gap: 105px;
+  }
+  main .fourth-sec-item {
+    flex-direction: column;
+    row-gap: 55px;
+  }
+  main .fourth-sec-item .values .value-txt p {
+    max-width: 500px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  main .fourth-sec {
+    row-gap: 64px;
+  }
+  main .fourth-sec-item .values {
+    row-gap: 64px;
+  }
 }/*# sourceMappingURL=careers.css.map */

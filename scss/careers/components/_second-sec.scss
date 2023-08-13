@@ -1,0 +1,12 @@
+@import '../../about/components/second-sec';
+main{
+    .second-sec{
+        &-item{
+            .txt-box{
+                button{
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
