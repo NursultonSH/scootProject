@@ -84,6 +84,10 @@ ul li a:hover {
   align-items: center;
 }
 
+.df {
+  display: flex;
+}
+
 .big-txt {
   font-weight: 700;
   font-size: 56px;
