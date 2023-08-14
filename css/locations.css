@@ -140,4 +140,140 @@ ul li a:hover {
 
 .apply-btn {
   padding: 11px 64px;
+}
+
+header {
+  padding: 22px 0;
+  background-color: white;
+}
+header menu {
+  -moz-column-gap: 58px;
+       column-gap: 58px;
+  background-color: white;
+}
+header menu .gam {
+  display: none;
+}
+header menu .gam .x {
+  display: none;
+}
+header menu .gam .gam1 {
+  display: none;
+  flex-direction: column;
+  width: 20px;
+  height: 16px;
+}
+header menu .gam .gam1 .gam_item {
+  width: 100%;
+  height: 3px;
+  background-color: #fcb72b;
+}
+header menu .mobile-menu {
+  width: 256px;
+  height: calc(100vh - 72px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: absolute;
+  top: -800%;
+  z-index: -5;
+  background-color: #333A44;
+  padding: 64px 0 24px 32px;
+  transition: 0.3s;
+}
+header menu .mobile-menu ul {
+  flex-direction: column;
+  align-items: self-start;
+  row-gap: 24px;
+}
+header menu .mobile-menu ul li a {
+  color: white;
+}
+header menu nav ul {
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+
+@media only screen and (max-width: 670px) {
+  .header {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+  }
+  .header menu {
+    width: 100%;
+    justify-content: space-between;
+    -moz-column-gap: 0;
+         column-gap: 0;
+    align-items: center;
+    position: relative;
+    padding: 22px 0;
+  }
+  .header menu .gam {
+    position: absolute;
+    display: flex;
+    margin-left: 33px;
+  }
+  .header menu .gam .gam1 {
+    display: flex;
+  }
+  .header menu .logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .header menu .mobile-menu {
+    display: flex;
+  }
+  .header menu .mobile-menu button {
+    display: block;
+  }
+  .header menu nav {
+    display: none;
+  }
+  .header button {
+    display: none;
+  }
+}
+main .first-sec {
+  position: relative;
+  background: url(../../../img/images/about-hero-desktop.jpg) no-repeat center center;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+main .first-sec .three-circles {
+  position: absolute;
+  right: -31px;
+  top: calc(50% - 31px);
+}
+main .first-sec-item {
+  height: 200px;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-tablet.jpg);
+  }
+}
+@media only screen and (max-width: 670px) {
+  main {
+    padding-top: 72px;
+  }
+  main .first-sec {
+    padding-left: 30px;
+  }
+  main .first-sec .three-circles {
+    display: none;
+  }
+  main .first-sec-item {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main .first-sec {
+    background-image: url(../../../img/images/about-hero-mobile.jpg);
+  }
 }/*# sourceMappingURL=locations.css.map */
